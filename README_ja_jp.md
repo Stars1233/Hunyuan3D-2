@@ -12,7 +12,7 @@
   <a href=https://huggingface.co/spaces/tencent/Hunyuan3D-2  target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Demo-276cb4.svg height=22px></a>
   <a href=https://huggingface.co/tencent/Hunyuan3D-2 target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Models-d96902.svg height=22px></a>
   <a href=https://3d-models.hunyuan.tencent.com/ target="_blank"><img src= https://img.shields.io/badge/Page-bb8a2e.svg?logo=github height=22px></a>
-  <a href=https://discord.gg/GuaWYwzKbX target="_blank"><img src= https://img.shields.io/badge/Discord-white.svg?logo=discord height=22px></a>
+  <a href=https://discord.gg/dNBrdrGGMa target="_blank"><img src= https://img.shields.io/badge/Discord-white.svg?logo=discord height=22px></a>
   <a href=https://github.com/Tencent/Hunyuan3D-2/blob/main/assets/report/Tencent_Hunyuan3D_2_0.pdf target="_blank"><img src=https://img.shields.io/badge/Report-b5212f.svg?logo=arxiv height=22px></a>
 </div>
 
@@ -30,6 +30,7 @@
 
 ## 🔥 ニュース
 
+- 2025年2月14日: 🛠️ テクスチャ強化モジュールをリリースしました。HD テクスチャ生成を [体験](minimal_demo.py) してください。
 - 2025年1月21日: 💬 私たちのウェブサイト [Hunyuan3D Studio](https://3d.hunyuan.tencent.com) でエキサイティングな3D生成を楽しんでください！
 - 2025年1月21日: 💬 [Hunyuan3D 2.0](https://huggingface.co/tencent/Hunyuan3D-2) の推論コードと事前学習モデルをリリースしました。
 - 2025年1月21日: 💬 Hunyuan3D 2.0をリリースしました。 [huggingface space](https://huggingface.co/spaces/tencent/Hunyuan3D-2) や [公式サイト](https://3d.hunyuan.tencent.com) でお試しください！
@@ -105,7 +106,7 @@ pip install -r requirements.txt
 cd hy3dgen/texgen/custom_rasterizer
 python3 setup.py install
 cd hy3dgen/texgen/differentiable_renderer
-bash compile_mesh_painter.sh OR python3 setup.py install (on Windows)
+python3 setup.py install
 ```
 
 ### APIの使い方
@@ -171,10 +172,10 @@ python3 gradio_app.py
     primaryClass={cs.CV}
 }
 
-@misc{yang2024tencent,
-    title={Tencent Hunyuan3D-1.0: A Unified Framework for Text-to-3D and Image-to-3D Generation},
-    year={2024},
+@misc{yang2024hunyuan3d,
+    title={Hunyuan3D 1.0: A Unified Framework for Text-to-3D and Image-to-3D Generation},
     author={Tencent Hunyuan3D Team},
+    year={2024},
     eprint={2411.02293},
     archivePrefix={arXiv},
     primaryClass={cs.CV}
